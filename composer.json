@@ -1,5 +1,5 @@
 {
-    "name": "shiftonelabs/laravel-sqs-fifo-queue",
+    "name": "rackbeat/laravel-sqs-fifo-queue",
     "description": "Adds a Laravel queue driver for Amazon SQS FIFO queues.",
     "keywords": ["laravel", "lumen", "illuminate", "queue", "sqs", "fifo", "aws"],
     "homepage": "https://github.com/shiftonelabs/laravel-sqs-fifo-queue",
