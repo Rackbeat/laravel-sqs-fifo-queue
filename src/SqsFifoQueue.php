@@ -92,12 +92,10 @@ class SqsFifoQueue extends SqsQueue
      * @param  string|null  $queue
      *
      * @return mixed
-     *
-     * @throws BadMethodCallException
      */
     public function later($delay, $job, $data = '', $queue = null)
     {
-        throw new BadMethodCallException('FIFO queues do not support per-message delays.');
+        return $this->pushRaw($this->createPayload($job, $data), $queue);
     }
 
     /**
